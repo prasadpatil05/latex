@@ -1,0 +1,44 @@
+\documentclass{article}
+
+\usepackage{graphicx}
+\usepackage{csvsimple}
+%\usepackage[utf8]{inputenc}
+\title{Assignment 3}
+\author{Images Table 1.Manual insertion of table  2.via csv file}
+
+\begin{document}
+\maketitle
+\begin{figure}
+\includegraphics[width=\linewidth]{wooden-row-boat-2535042.jpg}
+\caption{image}
+\label{fig:boat}
+\end{figure}
+
+\begin{table}[h!]
+  \begin{center}
+    \caption{ first table.}
+    \vspace{1cm}
+    \label{tab:table1}
+    \begin{tabular}{|l|c|r|} 
+      \hline
+      \textbf{Value 1} & \textbf{Value 2} & \textbf{Value 3}\\
+      $\alpha$ & $\beta$ & $\gamma$ \\
+      \hline
+     1 & 1110.1 & a\\
+      2 & 10.1 & b\\
+      3 & 23.113231 & c\\
+      \hline
+    \end{tabular}
+  \end{center}
+\end{table}
+  
+  
+    3. inserting table using .csv file 
+\begin{table}
+\centering
+\csvautotabular{book.csv}
+\end{table}
+
+\end{document}
+
+
